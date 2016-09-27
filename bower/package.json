@@ -1,0 +1,19 @@
+{
+  "name": "swing-jive",
+  "version": "1.0.0",
+  "description": "project 1 Code Institute",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmanning1/swing-jive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmanning1/swing-jive/issues"
+  },
+  "homepage": "https://github.com/bmanning1/swing-jive#readme"
+}

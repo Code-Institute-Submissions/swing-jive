@@ -5,47 +5,51 @@
     
     <!--******* links *******-->
     
-    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"href="bower/bower_components/bootstrap/dist/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"href="bower/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     
     <!--******* scripts *******-->
         
     <script type="text/javascript" src="bower/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower/bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower/bower_components/jquery/dist/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
     
     
 <body>
         
+    <div class="header">
+       <div class="col-sm-4">
+             ...
+       </div>
+       <div class="col-sm-4">
+            Swing/Jive
+       </div>
+       <div class="col-sm-4">
+             &copy; Rebecca Manning
+       </div>
+    </div>
 
     
-<div class="header">
-<ul>
-    <li>Swing/Jive</li>
-    <li>Rebecca Manning</li>
-</ul>
-</div>   
-
+<div class="container">
 <div ng-view>
  
-</div>   
-    
-<div class="footer">
-    <ul>
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/meet-the-band">Meet The Band</a></li>
-        <li><a href="#/listen">Listen</a></li>
-        <li><a href="#/bookings">Bookings</a></li>
-        <li><a href="#/contact">Contact</a></li>
-    </ul>
 </div>
+</div>
+    
+<ul class ="nav navbar-fixed-bottom footer col-xs-12">
+    <li class="col-xs-2 col-xs-15"><a href="#/">Home</a></li>
+    <li class="col-xs-2 col-xs-15"><a href="#/meet-the-band">Meet The Band</a></li>
+    <li class="col-xs-2 col-xs-15"><a href="#/listen">Listen</a></li>
+    <li class="col-xs-2 col-xs-15"><a href="#/bookings">Bookings</a></li>
+    <li class="col-xs-2 col-xs-15"><a href="#/contact">Contact</a></li>
+</ul>
     
 
 <script src="js/app.js"></script>
 <script src="js/controller.js"></script>
-<script src="js/service.js"></script>
 <script src="js/jQuery.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ angular.module('swing-jive').config(function($routeProvider) {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    $routeProvider.when('/meet-the-band', {
+    .when('/meet-the-band', {
         templateUrl: 'templates/meet-the-band.html',
         controller: 'MeetTheBandController'
     })

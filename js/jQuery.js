@@ -7,4 +7,8 @@ $(document).ready(function() {
         $(this).css('color','white');
         $(this).css('background-color','rgb(46,117,182)')
     });
+    $('.footer').click(function() {
+        $()
+    });
+    
 });

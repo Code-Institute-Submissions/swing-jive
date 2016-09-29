@@ -1,33 +1,29 @@
 /******** index.html ********/
 
 body{
-    background: url("../images/general/background.png") repeat;
+    background: url("../images/general/background2.jpg");
+    background-size: 100%;
     margin: 0;
     background-attachment: fixed
 }
 .container {
     width: 100%;
-    padding-top: 50px
+    padding-top: 50px;
+    
 }
 .header {
     position: fixed;
-    background-color: rgb(46,117,182);
-    color: white;
+    color: black;
     width: 100%;
     font-family: 'Roboto'
 }
 .header>div:nth-child(2) {
     display: flex;
-    justify-content: center
+    justify-content: flex-end
 }
 .header>div:nth-child(1) {
     display: flex;
     justify-content: flex-start
-}
-.header>div:nth-child(3) {
-    display: flex;
-    justify-content: flex-end;
-    color: rgba(255, 255, 255, 0.62)
 }
 ul.footer>li {
     padding: 0 5px 0 5px;
@@ -43,6 +39,9 @@ ul.footer>li>a {
     background-color: rgb(46,117,182);
     font-family: Roboto;
     padding: 5px 0 5px 0
+}
+.footer-home {
+    padding: 20px 0 20px 0;
 }
 .col-xs-15{
     width:20%;

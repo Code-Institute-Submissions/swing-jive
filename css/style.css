@@ -1,19 +1,19 @@
 /******** index.html ********/
 
 body{
-    background: url("../images/general/background2.jpg");
-    background-size: 100%;
+    bakground-size: 100%;
     margin: 0;
     background-attachment: fixed
 }
 .container {
     width: 100%;
-    padding-top: 50px;
-    
+    padding: 0
 }
+/*
 .header {
     position: fixed;
-    color: black;
+    z-index: 1;
+    color: darkblue;
     width: 100%;
     font-family: 'Roboto'
 }
@@ -24,13 +24,15 @@ body{
 .header>div:nth-child(1) {
     display: flex;
     justify-content: flex-start
-}
+} */
+
 ul.footer>li {
     padding: 0 5px 0 5px;
 }
 ul.footer>li>a {
     font-family: 'Roboto';
     font-size: 120%;
+    padding: 10px 10px 50px 10px;
     display: flex;
     justify-content: center;
     color: white
@@ -38,15 +40,25 @@ ul.footer>li>a {
 .footer {
     background-color: rgb(46,117,182);
     font-family: Roboto;
-    padding: 5px 0 5px 0
-}
-.footer-home {
-    padding: 20px 0 20px 0;
+    padding: 5px 0 5px 0;
 }
 .col-xs-15{
     width:20%;
 }
 
+/******** carousel ******/
+
+.carousel-inner {
+    padding: 0;
+    margin: 0;
+}
+.item {
+    height: 680px;
+    
+}
+.item>img {
+    width: 100%
+}
 /******** home ********/
 
 .home {
@@ -60,3 +72,33 @@ video{
     
 }
 
+.home-title {
+    color: white;
+    width: 100%;
+    font-size: 80px;
+    bottom: 6%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10000;
+    
+}
+.icons { 
+    width: 100%;
+    padding-left: 0.5%;
+    top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 10000;
+}
+
+.icons>a {
+    padding: 0 2px;
+    display: flex;
+    align-items: flex-end
+}
+.social-med {
+    filter: saturate(0%);
+    height: 35px
+}

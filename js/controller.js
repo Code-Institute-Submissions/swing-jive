@@ -26,8 +26,8 @@ angular.module('RouteControllers', [])
                     
                     initialDelay: 200,
                     in: {
-                        effect: 'fadeIn',
-                        sync: true,
+                        effect: 'swing',
+                        shuffle: false,
                     },
                 }); 
             });

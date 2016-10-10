@@ -1,49 +1,44 @@
 /******** index.html ********/
 
 body{
-    bakground-size: 100%;
     margin: 0;
-    background-attachment: fixed
+    background-attachment: fixed;
+    background-image: url("../images/general/background1.jpg");
+    background-size: cover
 }
 .container {
     width: 100%;
     padding: 0
 }
-/*
-.header {
-    position: fixed;
-    z-index: 1;
-    color: darkblue;
-    width: 100%;
-    font-family: 'Roboto'
-}
-.header>div:nth-child(2) {
-    display: flex;
-    justify-content: flex-end
-}
-.header>div:nth-child(1) {
-    display: flex;
-    justify-content: flex-start
-} */
-
 ul.footer>li {
     padding: 0 5px 0 5px;
 }
 ul.footer>li>a {
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-size: 120%;
     padding: 10px 10px 50px 10px;
     display: flex;
     justify-content: center;
-    color: white
+    color: rgba(255, 255, 255, 0.6)
 }
 .footer {
-    background-color: rgb(46,117,182);
+    background-color: rgb(74, 28, 65);
     font-family: Roboto;
-    padding: 5px 0 5px 0;
+    padding: 5px 200px 5px 200px;
 }
 .col-xs-15{
     width:20%;
+}
+.copyright {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 13px;
+    padding-right:18px;
+    font-size: 12px;
+    text-decoration: none
 }
 
 /******** carousel ******/
@@ -76,6 +71,7 @@ video{
     color: white;
     width: 100%;
     font-size: 80px;
+    font-family: Raleway;
     bottom: 6%;
     display: flex;
     justify-content: center;
@@ -89,7 +85,7 @@ video{
     top: 1%;
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     z-index: 10000;
 }
 
@@ -99,6 +95,310 @@ video{
     align-items: flex-end
 }
 .social-med {
-    filter: saturate(0%);
-    height: 35px
+    filter: saturate(100%);
+    height: 40px
+}
+.social-med1 {
+    height: 50px
+}
+
+
+/******** meet-the-band *********/
+
+ul.meet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 410px 170px 410px;
+    padding: 0;
+    list-style-type: none;
+    
+}
+ul.meet>li{
+    border: 1px solid rgb(74, 28, 65);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Raleway;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+ul.meet>li>a{
+    color: rgb(74, 28, 65);
+    text-decoration: none;
+    margin: 0 5px
+}
+img.meet {
+    width: 100%;
+    height: 350px;
+    opacity: 0.5
+    
+}
+.member {
+    width: 100%;
+    padding-left: 300px;
+    padding-right: 300px
+}
+.member>div {
+    font-size: 13px;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.6)
+}
+.member>div#one {
+    
+    text-align: right;
+    padding-left: 70px;
+    padding-right: 10px
+}
+.member>div#two {
+    
+    padding-left: 10px;
+    padding-right: 70px;
+    text-align: left;
+}
+.meet-member {
+    border-radius: 100px;
+    position: absolute;
+    height: 200px;
+    padding: 10px;
+    filter:grayscale()
+}
+.meet-member-box {
+    display: flex;
+    justify-content: center
+}
+.dj {
+    top: 640px
+}
+.md {
+    top: 1310px
+}
+.mn {
+    top: 1980px
+}
+.pt {
+    top: 2650px
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: Raleway;
+    color: white;
+}
+.meet-header {
+    display: flex;
+    justify-content: center;
+    
+}
+.meet-header>img {
+    border-radius: 100px;
+    height: 130px;
+    margin: 150px 5px 30px 5px;
+    border: white solid 1px
+}
+hr {
+    width: 40%;
+    padding-bottom:130px;
+    border-color: rgba(255,255,255,0.5)
+}
+.meet-hover {
+    background-color: rgb(74, 28, 65);
+    color: white;
+    border: none
+}
+.top {
+    position: fixed;
+    z-index: 1;
+    right: 15px;
+    top: 76%
+}
+.top>img {
+    height: 60px
+}
+.member>.final {
+    margin-bottom: 30px;
+}
+hr.final {
+    padding-bottom: 20px
+}
+.footer-details {
+    margin-bottom: 150px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px
+}
+
+.dj-name {
+    position: absolute;
+    font-size: 80px;
+    right: 130px;
+    top: 900px;
+    color: white;
+    font-family: Raleway;
+}
+.md-name {
+    position: absolute;
+    font-size: 80px;
+    left: 130px;
+    top: 1570px;
+    color: white;
+    font-family: Raleway
+}
+.mn-name {
+    position: absolute;
+    font-size: 80px;
+    right: 130px;
+    top: 2240px;
+    color: white;
+    font-family: Raleway
+}
+.pt-name {
+    position: absolute;
+    font-size: 80px;
+    left: 130px;
+    top: 2920px;
+    color: white;
+    font-family: Raleway
+}
+
+/*********** listen ***********/
+.listen-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(78,24,65,0.2);
+    height: 300px
+}
+.listen-body {
+    height: 540px;
+}
+img#album1,img#album2,img#album3,img#album4 {
+    height: 100px;
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: white solid 1px;
+    opacity: 0.5;
+}
+img#album-main {
+    width: 270px;
+    height: 270px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+    border: solid white 1px;
+}
+.listen-opt-body {
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column
+}
+.listen-opt-info {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.listen-opt-info>audio {
+    width: 100%;
+    
+}
+.listen-opt-albums>a>img {
+    border-radius: 5px
+}
+.listen-album-info{
+    height: 120px;
+    color: rgba(255,255,255,0.8);
+    font-size: 22px;
+    padding-top: 10px;
+    text-align: left
+}
+em.year {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5)
+}
+/************ bookings ************/
+.book-panel {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.book-panel>img {
+    height: 95%;
+    width: 40%;
+    opacity: 0.8;
+    border: 1px solid white
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 80px
+}
+hr.hr-booking {
+    padding-bottom: 0px
+}
+.book-info {
+    margin-left: 30%;
+    margin-right: 30%;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    text-align: center
+}
+.final-hr {
+    margin-bottom: 40px
+}
+.book-panel.first {
+    background-color: rgba(0,0,0,0);
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    color: rgba(255,255,255,0.6)
+}
+.book-concert>img {
+    height: 140px;
+    width:140px;
+    border-radius: 100px;
+    border:solid white 1px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.book-concert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2.concerts{
+    margin-top: 40px
+}
+.book-concert>span {
+    font-size: 20px
+}
+.buy-tickets {
+    padding: 8px 20px;
+    font-size: 15px;
+    font-family: Raleway;
+    border: 1px solid rgba(78,24,65,0.7);
+    border-radius: 10px;
+    color: rgb(78,24,65);
+    margin: 20px 0
+}
+
+
+
+
+/************* contact ***************/
+
+.contact-box {
+    background-color: rgba(74,28,65,0.5);
+    width: 100%;
+    height: 400px;
 }

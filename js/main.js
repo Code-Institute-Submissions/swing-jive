@@ -2,12 +2,12 @@ $(document).ready(function() {
     
     //******* footer *******//
     $('.footer>li>a').mouseenter(function() {
-        $(this).css('color','rgba(0,0,0,0.8)');
-        $(this).css('background-color','rgb(46,117,182)')
+        $(this).css('color','white');
+        $(this).css('background-color','rgb(74, 28, 65)')
     });
     $('.footer>li>a').mouseleave(function() {
-        $(this).css('color','white');
-        $(this).css('background-color','rgb(46,117,182)')
+        $(this).css('color','rgba(255, 255, 255, 0.6)');
+        $(this).css('background-color','rgb(74, 28, 65)')
     });
     
     
@@ -32,10 +32,10 @@ $(document).ready(function() {
     //********** home ************//
     
     $('.icons>a>img').mouseenter(function(){
-        $(this).removeClass('social-med')
+        $(this).addClass('social-med1')
     });
     $('.icons>a>img').mouseleave(function(){
-        $(this).addClass('social-med')
+        $(this).removeClass('social-med1')
     });
 
     

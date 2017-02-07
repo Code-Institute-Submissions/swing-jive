@@ -1,15 +1,13 @@
 angular.module('SwingJiveDirectives', [])
     .directive('itunes-search', function () {
         return {
-            restrict: "E",
-            scope: true,
+            restrict: 'E',
             templateUrl: "../templates/directives/itunes-search.html"
         };
     })
     .directive('photos', function() {
         return {
-            restrict: "E",
-            scope: true,
-            templateUrl: "../templates/directives/photos.html"
+            restrict: 'E',
+            templateUrl: "templates/directives/photos.html"
         };
-    })
+    });

@@ -59,7 +59,7 @@ angular.module('RouteControllers', [])
             
     })
     .controller('BookingsController', function($scope) {
-    
+        
     })
     .controller('ItunesController', function($scope,$http) {
         $scope.searchiTunes = function(keyword){
@@ -98,8 +98,7 @@ angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
     
     
-        $(document).ready(function(){
-            $('.item').animate({height: '420px'},'slow');        $('.footer>li>a').animate({padding: "10px 10px 200px 10px"}, 'slow');
+        $(document).ready(function(){        $('.footer>li>a').animate({padding: "10px 10px 100% 10px"}, 'slow');
             
             
             $('.footer-title').hide()

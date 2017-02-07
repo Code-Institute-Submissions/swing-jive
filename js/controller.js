@@ -38,21 +38,77 @@ angular.module('RouteControllers', [])
             
             $('ul.meet>li').css('width','100px')
             
-            $('.listen-opt-albums>a').mouseenter(function(){
+            $('.listen-opt-albums>button').mouseenter(function(){
                 $(this).siblings().css('opacity','0.5')
             });
-            $('.listen-opt-albums>a').mouseleave(function(){
+            $('.listen-opt-albums>button').mouseleave(function(){
                 $(this).siblings().css('opacity','1');
             });
-            
-            
-            $('.listen-opt-albums>a>img').mouseenter(function(){
+            $('.listen-opt-albums>button>img').mouseenter(function(){
                 $(this).css('border','5px solid white');
                 $(this).css('opacity','1')
             });
-            $('.listen-opt-albums>a>img').mouseleave(function(){
+            $('.listen-opt-albums>button>img').mouseleave(function(){
                 $(this).css('border','1px solid white');
                 $(this).css('opacity','0.5')
+            });
+            $('.listen-opt-albums>button').click(function (){
+                $(this).css('outline','none'); 
+            });
+            $('.listen-opt-albums>button.button-tab1').click(function (){
+                $('.tab1').removeClass('hidden-tab');
+                $('.tab3').addClass('hidden-tab');
+                $('.tab4').addClass('hidden-tab');
+                $('.tab2').addClass('hidden-tab');
+                
+                $('.tab1>audio').trigger('play');
+                $('.tab3>audio').trigger('pause');
+                $('.tab4>audio').trigger('pause');
+                $('.tab2>audio').trigger('pause');
+                $('#watch>video').trigger('pause')
+            });
+            $('.listen-opt-albums>button.button-tab2').click(function (){
+                $('.tab2').removeClass('hidden-tab');
+                $('.tab3').addClass('hidden-tab');
+                $('.tab4').addClass('hidden-tab');
+                $('.tab1').addClass('hidden-tab');
+                
+                $('.tab2>audio').trigger('play');
+                $('.tab3>audio').trigger('pause');
+                $('.tab4>audio').trigger('pause');
+                $('.tab1>audio').trigger('pause');
+                $('#watch>video').trigger('pause')
+            });
+            $('.listen-opt-albums>button.button-tab3').click(function (){
+                $('.tab3').removeClass('hidden-tab');
+                $('.tab2').addClass('hidden-tab');
+                $('.tab4').addClass('hidden-tab');
+                $('.tab1').addClass('hidden-tab');
+                
+                $('.tab3>audio').trigger('play');
+                $('.tab1>audio').trigger('pause');
+                $('.tab4>audio').trigger('pause');
+                $('.tab2>audio').trigger('pause');
+                $('#watch>video').trigger('pause')
+            });
+            $('.listen-opt-albums>button.button-tab4').click(function (){
+                $('.tab4').removeClass('hidden-tab');
+                $('.tab3').addClass('hidden-tab');
+                $('.tab2').addClass('hidden-tab');
+                $('.tab1').addClass('hidden-tab');
+                
+                $('.tab4>audio').trigger('play');
+                $('.tab3>audio').trigger('pause');
+                $('.tab1>audio').trigger('pause');
+                $('.tab2>audio').trigger('pause');
+                $('#watch>video').trigger('pause')
+            });
+            
+            $('#watch>video').on('play', function(e) {                
+                $('.tab4>audio').trigger('pause');
+                $('.tab3>audio').trigger('pause');
+                $('.tab1>audio').trigger('pause');
+                $('.tab2>audio').trigger('pause');
             });
                          
         });

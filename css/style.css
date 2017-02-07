@@ -302,7 +302,8 @@ img#album-main {
     margin-right: 5px;
 }
 .listen-opt-info>audio {
-    width: 100%;
+    width: 95.5%;
+    margin-left: 1.5%
     
 }
 .listen-opt-albums>a>img {
@@ -313,7 +314,8 @@ img#album-main {
     color: rgba(255,255,255,0.8);
     font-size: 19px;
     text-align: left;
-    font-family: Raleway
+    font-family: Raleway;
+    margin-left: 1.5%
 }
 em.year {
     font-size: 16px;
@@ -342,6 +344,21 @@ ul.listen-meet {
 .gallery0>.item>img{
     height: 100%;
     width: 100%
+}
+.hidden-tab{
+    display: none
+}
+.tab2{
+}
+.tab3{
+}
+.tab4{
+}
+.listen-opt-albums>button {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    width: 24%
 }
 
 /************ bookings ************/

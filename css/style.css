@@ -310,7 +310,7 @@ hr.final {
 .listen-body2{
     position: absolute;
     width: 100%;
-    bottom: 6%;
+    top: 6%;
 }
 img#album1,img#album2,img#album3,img#album4 {
     height: 7vw;
@@ -322,15 +322,15 @@ img#album1,img#album2,img#album3,img#album4 {
   img#album1,img#album2,img#album3,img#album4 {
     height: 50px;
     width: 50px;
-      margin-top: 20%
+    margin-top: 20%
   }
 }
 button {
     padding:0;
 }
 img#album-main {
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
     margin: 1%;
     border-radius: 5px;
     border: solid white 1px;
@@ -342,11 +342,12 @@ img#album-main {
 }
 .listen-opt-body {
     height: 270px;
-    width: 100%;
+    width: 40%;
 }
 @media (max-width: 600px) {
   .listen-opt-body {
     height: 180px;
+      width: 90%;
   }
 }
 .listen-opt-info>audio {
@@ -376,6 +377,7 @@ img#album-main {
 }
 .listen-opt-albums>button {
     border-radius: 10px;
+    margin-top: 10px;
     background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
 }

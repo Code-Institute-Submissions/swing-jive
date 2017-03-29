@@ -12,7 +12,8 @@ $(document).ready(function() {
     
     
     $('.footer>li>a.otherbtn').click(function() {
-        $('.footer>li>a').animate({padding: "10px 10px 50px 10px"}, 'slow');
+        $('.footer>li>a').animate({"padding-bottom": "20%"}, 'slow');
+        $('.footer>li>a').css({minHeight:"20px"});
         $('.footer-title').show()
     });
     

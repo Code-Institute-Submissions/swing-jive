@@ -11,7 +11,7 @@ angular.module('RouteControllers', [])
                 $(this).animate({fontSize: '14px'},'slow');
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width','1px');
-                $(this).children().css('color', 'rgb(74, 28, 65)')
+                $(this).children().css('color', 'black')
             });
             
             
@@ -33,7 +33,7 @@ angular.module('RouteControllers', [])
                 $(this).animate({fontSize: '14px'},'slow');
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width','1px');
-                $(this).children().css('color', 'rgb(74, 28, 65)')
+                $(this).children().css('color', 'black')
             });
             
             $('ul.meet>li').css('width','100px')
@@ -121,7 +121,7 @@ angular.module('RouteControllers', [])
         $scope.searchiTunes = function(keyword){
         // use the jsonp callback function from the $http service this
         // will get around any limitations for cross-domain scripting.
-        $http.jsonp('http://itunes.apple.com/search?limit=4', {
+        $http.jsonp('http://itunes.apple.com/search?limit=3', {
             params: {
                 'callback': 'JSON_CALLBACK',
                 'term': keyword,
@@ -154,23 +154,24 @@ angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
     
     
-        $(document).ready(function(){        $('.footer>li>a').animate({padding: "10px 10px 100% 10px"}, 'slow');
+        $(document).ready(function(){        
             
+        $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
+        $('.footer>li>a').css({minHeight:"200px"});
             
-            $('.footer-title').hide()
-            
-            
-            $(function () {
-                $('.demo').textillate({
-                    
-                    initialDelay: 200,
-                    in: {
-                        effect: 'fadeIn',
-                        shuffle: false,
-                        delay: 60,
-                    },
-                }); 
-            });
+        $('.footer-title').hide();
+          
+        $(function () {
+            $('.demo').textillate({
+
+                initialDelay: 200,
+                in: {
+                    effect: 'fadeIn',
+                    shuffle: false,
+                    delay: 60,
+                },
+            }); 
+        });
             
         });
    

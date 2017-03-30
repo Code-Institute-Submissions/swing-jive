@@ -157,7 +157,7 @@ angular.module('RouteControllers', [])
         $(document).ready(function(){        
             
         $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
-        $('.footer>li>a').css({minHeight:"200px"});
+        //$('.footer>li>a').css({minHeight:"200px"});
             
         $('.footer-title').hide();
           

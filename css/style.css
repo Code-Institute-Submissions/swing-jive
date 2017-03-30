@@ -61,6 +61,16 @@ ul.footer>li>a {
     top: 8px;
   }
 }
+@media (min-width: 600px) {
+  p.symbols {
+    display: none
+  }
+}
+@media (max-width: 600px) {
+    p.nav-main {
+        display: none
+    }
+}
 /******** carousel ******/
 
 .carousel-inner {
@@ -83,12 +93,12 @@ ul.footer>li>a {
 }
 @media (max-width: 600px) {
   #home-body {
-    height: 100vw;
+    height: 450px;
   }
 }
 @media (max-width: 600px) {
   .carousel-control{
-     height: 80%   
+     height: 100%   
     }
 }
 .home-title {
@@ -101,11 +111,12 @@ ul.footer>li>a {
     justify-content: center;
     position: absolute;
     z-index: 10000;  
+    text-align: center
 }
 @media (max-width: 600px) {
   .home-title {
     font-size: 70px;
-    bottom: -20%
+    bottom: -25%
   }
 }
 .icons { 
@@ -160,6 +171,7 @@ ul.meet>li>a{
 @media (max-width: 600px) {
   ul.meet>li>a {
     font-size: 19px;
+      text-align: center
   }
 }
 img.meet {
@@ -221,10 +233,11 @@ h1 {
     font-size: 8vw;
     font-family: Raleway;
     color: white;
+    text-align: center
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 60px
+        font-size: 60px;
     }
 }
 .meet-maintitle {
@@ -419,13 +432,22 @@ em.year {
     padding: 5px;
 }
 ul.listen-meet {
-    margin-bottom: 1.5%;
+    margin-bottom: 10%;
     margin-top: 15px
+}
+@media (max-width: 600px) {
+  ul.listen-meet {
+    margin-bottom: 180px
+  }
 }
 .listen-title{
     margin-top: 2%
 }
-
+@media (max-width: 600px) {
+  .listen-title {
+    margin-top: 70px
+  }
+}
 
 
 .gallery-main{
@@ -629,10 +651,11 @@ h1.contact-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+      width: 90%
   }
 }
 .contact-map{
-    padding-top: 0.8%;
+    padding-top: 10px;
     width: 400px
 }
 
@@ -679,6 +702,11 @@ form>legend {
 input, textarea{
     color: rgb(74, 28, 65)
 }
+@media (max-width: 600px) {
+  input, textarea{
+    width: 100%
+    }
+}
 iframe {
     width: 100%;
     background-color: rgba(255,255,255,0.8)
@@ -689,7 +717,11 @@ iframe {
     flex-wrap: wrap;
     margin-bottom: 80px
 }
-
+@media (max-width: 600px) {
+  .contact-box2{
+    margin-bottom: 200px
+    }
+}
 /*---------DOESNT WORK(below)---------------*/
 @media screen (max-width: 560px) and (orientation: landscape) {
   html {

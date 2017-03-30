@@ -158,14 +158,13 @@ angular.module('RouteControllers', [])
             
         $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
         //$('.footer>li>a').css({minHeight:"200px"});
-        $('body').css('background-color','rgb(74, 28, 65)')
-        $('body').css('background-image', 'none'); 
         $('.footer-title').hide();
-          
+        
+        
         $(function () {
             $('.demo').textillate({
 
-                initialDelay: 200,
+                initialDelay: 300,
                 in: {
                     effect: 'fadeIn',
                     shuffle: false,

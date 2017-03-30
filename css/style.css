@@ -117,6 +117,7 @@ ul.footer>li>a {
     bottom: 110px;
     position:relative;
     padding: 20px 0;
+    margin-bottom:0;
     background-color: rgb(74, 28, 65)
   }
 }

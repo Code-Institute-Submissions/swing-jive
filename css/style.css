@@ -27,7 +27,6 @@ ul.footer>li>a {
 @media (max-width: 600px) {
   ul.footer>li>a {
     font-size: 28px;
-      margin-bottom: 100px;
       margin-right: 10px;
   }
 }
@@ -115,7 +114,10 @@ ul.footer>li>a {
 @media (max-width: 600px) {
   .home-title {
     font-size: 70px;
-    bottom: -25%
+    bottom: 15%;
+    position:relative;
+    padding-bottom: 10px;
+    background-color: rgb(74, 28, 65)
   }
 }
 .icons { 

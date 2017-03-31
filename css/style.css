@@ -37,7 +37,7 @@ ul.footer>li>a {
 }
 @media (max-width: 600px) {
   .footer {
-      padding: 0.7% 0%;
+      padding: 30% 0 0.7% 0;
    }
 }
 .col-xs-15{
@@ -114,9 +114,9 @@ ul.footer>li>a {
 @media (max-width: 600px) {
   .home-title {
     font-size: 70px;
-    bottom: 110px;
+    bottom: 30%;
     position:relative;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     margin-bottom:0;
     background-color: rgb(74, 28, 65)
   }

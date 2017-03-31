@@ -37,7 +37,7 @@ ul.footer>li>a {
 }
 @media (max-width: 600px) {
   .footer {
-      padding: 30% 0 0.7% 0;
+      padding: 0.7% 0 0.7% 0;
    }
 }
 .col-xs-15{

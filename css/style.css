@@ -273,7 +273,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    padding-top: 10%;   
+    padding-top: 8%;   
 }
 @media (max-width: 600px) {
   .meet-header {
@@ -467,11 +467,11 @@ ul.listen-meet {
   }
 }
 .listen-title{
-    margin-top: 2%
+    margin-top: 0
 }
 @media (max-width: 600px) {
   .listen-title {
-    margin-top: 70px
+    margin-top: 40px
   }
 }
 

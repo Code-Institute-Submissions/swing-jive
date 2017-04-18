@@ -121,7 +121,7 @@ angular.module('RouteControllers', [])
         $scope.searchiTunes = function(keyword){
         // use the jsonp callback function from the $http service this
         // will get around any limitations for cross-domain scripting.
-        $http.jsonp('http://itunes.apple.com/search?limit=3', {
+        $http.jsonp('//itunes.apple.com/search?limit=3', {
             params: {
                 'callback': 'JSON_CALLBACK',
                 'term': keyword,

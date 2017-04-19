@@ -5,7 +5,7 @@ angular.module('SwingJiveDirectives', [])
             templateUrl: "../templates/directives/itunes-search.html"
         };
     })
-    .directive('photos', function() {
+    .directive('photos', function () {
         return {
             restrict: 'E',
             templateUrl: "templates/directives/photos.html"

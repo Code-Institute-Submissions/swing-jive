@@ -1,34 +1,34 @@
 <!-- show an error if there's a search error -->
-        {{ error }}
-        <!-- add form, use ng-submit directive to call 
-             searchiTunes, pass the artist -->
-        <form name="search" ng-submit="searchiTunes(artist)">
+{{ error }}
+<!-- add form, use ng-submit directive to call
+     searchiTunes, pass the artist -->
+<form name="search" ng-submit="searchiTunes(artist)">
 
-         <!-- Artist/band name required, use the ng-model 
-              directive to pass the artist name back into the
-              controller/model -->
-         <input type="search" required placeholder="Artist" ng-model="artist"/>
-            <input type="submit" value="Search"/>
-        </form>
-        <!-- ng-show directive to decide when to show results. 
-             In this case, we will show the songs when there 
-             are songs to show. -->
-        <table ng-show="songs">
-            <tbody>
-                <!-- ng-repeat directive to loop over each 
-                     song in the songs list. -->
-                <!-- The song data is loaded into objects for 
-                     easy access. Just call on the attributes 
-                     you need. -->
-                <tr ng-repeat="song in songs">
-                    <!-- ng-src lets you load imgs when data 
-                         is present. -->
-                    <td><img ng-src="{{song.artworkUrl60}}" 
-                         alt="{{song.collectionName}}"/> 
-                    </td>
-                    <td>{{song.trackName}}</td>
-                    <td><a href="{{song.previewUrl}}" target="_blank">Play</a></td>
-                    
-                </tr>
-            </tbody>
-        </table>
+    <!-- Artist/band name required, use the ng-model
+         directive to pass the artist name back into the
+         controller/model -->
+    <input type="search" required placeholder="Artist" ng-model="artist"/>
+    <input type="submit" value="Search"/>
+</form>
+<!-- ng-show directive to decide when to show results.
+     In this case, we will show the songs when there
+     are songs to show. -->
+<table ng-show="songs">
+    <tbody>
+    <!-- ng-repeat directive to loop over each
+         song in the songs list. -->
+    <!-- The song data is loaded into objects for
+         easy access. Just call on the attributes
+         you need. -->
+    <tr ng-repeat="song in songs">
+        <!-- ng-src lets you load imgs when data
+             is present. -->
+        <td><img ng-src="{{ song.artworkUrl60 }}"
+                 alt="{{ song.collectionName }}"/>
+        </td>
+        <td>{{ song.trackName }}</td>
+        <td><a href="{{ song.previewUrl }}" target="_blank">Play</a></td>
+
+    </tr>
+    </tbody>
+</table>

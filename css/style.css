@@ -263,6 +263,7 @@ img.meet {
     max-height: 230px;
     padding: 10px;
     filter:grayscale();
+    -webkit-filter: grayscale(100%);
     /*top:-15%*/
 }
 @media (max-width: 600px) {

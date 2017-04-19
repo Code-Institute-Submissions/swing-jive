@@ -162,7 +162,7 @@ ul.meet {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 3% 0 20% 0;
+    margin: 3% 0 10% 0;
     list-style-type: none;
     width: 100%
 }
@@ -228,10 +228,24 @@ img.meet {
     text-align: center;
 }
 .meet-member-images{
-    position: relative;
+    /*position: relative;*/
     display: flex;
-    justify-content: center;
-    margin-bottom: 5%
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    background-size: 100% 100% !important;
+}
+.meet-member-images.saxophone {
+    background: url("../images/meet/saxophone1.png") center;
+}
+.meet-member-images.piano {
+    background: url("../images/meet/piano1.png") center;
+}
+.meet-member-images.guitar {
+    background: url("../images/meet/guitar1.png") center;
+}
+.meet-member-images.drums {
+    background: url("../images/meet/drums1.png") center;
 }
 @media (max-width: 600px) {
     .meet-member-images {
@@ -240,16 +254,16 @@ img.meet {
 }
 .meet-member {
     border-radius: 100%;
-    position: absolute;
+    /*position: absolute;*/
     height: 27vw;
     max-height: 230px;
     padding: 10px;
     filter:grayscale();
-    top:-15%
+    /*top:-15%*/
 }
 @media (max-width: 600px) {
     .meet-member {
-        top: -40%;
+        /*top: -40%;*/
         height: 170px
     }
 }
@@ -331,7 +345,7 @@ hr.final {
   }
 }
 .dj-name,.mn-name,.md-name,.pt-name {
-    position: absolute;
+    /*position: absolute;*/
     font-size: 7vw;
     bottom: 2%;
     color: white;

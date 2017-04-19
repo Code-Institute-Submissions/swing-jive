@@ -227,6 +227,10 @@ img.meet {
 .member>div#one,.member>div#two {
     text-align: center;
 }
+.member-info {
+    display: flex;
+    flex-direction: column
+}
 .meet-member-images{
     /*position: relative;*/
     display: flex;

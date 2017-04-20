@@ -5,13 +5,11 @@ angular.module('RouteControllers', [])
                 $(this).animate({fontSize: '18px'}, 'slow');
                 $(this).addClass('meet-hover');
                 $('ul.meet>li').css('border-width', '0');
-                //$(this).children().css('color', 'white')
             });
             $('ul.meet>li').mouseleave(function () {
                 $(this).animate({fontSize: '14px'}, 'slow');
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width', '1px');
-                //$(this).children().css('color', 'black')
             });
 
 
@@ -25,13 +23,11 @@ angular.module('RouteControllers', [])
                 $(this).animate({fontSize: '18px'}, 'slow');
                 $(this).addClass('meet-hover');
                 $('ul.meet>li').css('border-width', '0');
-                //$(this).children().css('color', 'white')
             });
             $('ul.meet>li').mouseleave(function () {
                 $(this).animate({fontSize: '14px'}, 'slow');
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width', '1px');
-                //$(this).children().css('color', 'black')
             });
 
             $('ul.meet>li').css('width', '100px')
@@ -155,7 +151,6 @@ angular.module('RouteControllers', [])
         $(document).ready(function () {
 
             $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
-            //$('.footer>li>a').css({minHeight:"200px"});
             $('.footer-title').hide();
 
 

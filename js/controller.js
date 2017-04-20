@@ -11,7 +11,7 @@ angular.module('RouteControllers', [])
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width', '1px');
             });
-            $('.home-title').hide();
+            //$('.home-title').hide();
 
         });
     })
@@ -104,16 +104,15 @@ angular.module('RouteControllers', [])
                 $('.tab1>audio').trigger('pause');
                 $('.tab2>audio').trigger('pause');
             });
-            $('.home-title').hide();
+            //$('.home-title').hide();
 
         });
 
     })
     .controller('BookingsController', function ($scope) {
-        $(document).ready(function () {
-            $('.home-title').hide();
-
-        });
+        //$(document).ready(function () {
+          //  $('.home-title').hide();
+        //});
     })
     .controller('ItunesController', function ($scope, $http) {
         $scope.searchiTunes = function (keyword) {
@@ -147,10 +146,9 @@ angular.module('RouteControllers', [])
 
     })
     .controller('ContactController', function ($scope) {
-        $(document).ready(function () {
-            $('.home-title').hide();
-
-        });
+        //$(document).ready(function () {
+          //  $('.home-title').hide();
+        //});
     })
     .controller('HomeController', function ($scope) {
 
@@ -159,7 +157,7 @@ angular.module('RouteControllers', [])
 
             $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
             $('.footer-title').hide();
-            $('.home-title').show().delay(800);
+            //$('.home-title').show().delay(800);
 
             $(function () {
                 $('.demo').textillate({

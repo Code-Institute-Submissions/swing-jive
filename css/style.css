@@ -99,7 +99,7 @@ ul.footer>li>a {
 }
 .home-title {
     color: white;
-    width: 100%;
+    width: 100% !important;
     font-size: 7vw;
     font-family: Raleway;
     bottom: 3%;
@@ -107,7 +107,8 @@ ul.footer>li>a {
     justify-content: center;
     position: absolute;
     z-index: 10000;
-    text-align: center
+    text-align: center;
+    display: none;
 }
 @media (max-width: 560px) {
   .home-title {

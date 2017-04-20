@@ -167,8 +167,8 @@ ul.meet {
     width: 100%
 }
 ul.meet>li{
-    border: 1px solid rgba(78,24,65,0.7);
-    background-color: white;
+    /*border: 1px solid rgba(78,24,65,0.7);*/
+    background-color: rgba(255,255,255,0.7);
     padding: 10px 0.7%;
     border-radius: 10px;
     margin: 0 0.5% 0 0.5%;

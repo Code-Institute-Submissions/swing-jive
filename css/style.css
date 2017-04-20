@@ -631,6 +631,7 @@ h2.concerts{
     font-size: 15px;
     font-family: Raleway;
     border-radius: 10px;
+    border: none;
     color: rgb(78,24,65);
     background-color: rgba(255,255,255,0.7);
     margin: 10px 0;

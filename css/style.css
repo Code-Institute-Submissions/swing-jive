@@ -181,6 +181,7 @@ ul.meet>li{
 @media (max-width: 600px) {
   ul.meet>li {
     margin: 0 5px;
+    background-color: white;
     padding-left: 10px;
     padding-right: 10px
   }
@@ -626,14 +627,16 @@ h2.concerts{
     padding: 8px 20px;
     font-size: 15px;
     font-family: Raleway;
-    border: 1px solid rgba(78,24,65,0.7);
+    /*border: 1px solid rgba(78,24,65,0.7);*/
     border-radius: 10px;
     color: rgb(78,24,65);
-    margin: 10px 0
+    background-color: rgba(255,255,255,0.7);
+    margin: 10px 0;
 }
 @media (max-width: 600px) {
   .buy-tickets {
     font-size: 23px;
+    background-color: white;
   }
 }
 

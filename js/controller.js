@@ -25,13 +25,13 @@ angular.module('RouteControllers', [])
                 $(this).animate({fontSize: '18px'}, 'slow');
                 $(this).addClass('meet-hover');
                 $('ul.meet>li').css('border-width', '0');
-                $(this).children().css('color', 'white')
+                //$(this).children().css('color', 'white')
             });
             $('ul.meet>li').mouseleave(function () {
                 $(this).animate({fontSize: '14px'}, 'slow');
                 $(this).removeClass('meet-hover');
                 $('ul.meet>li').css('border-width', '1px');
-                $(this).children().css('color', 'black')
+                //$(this).children().css('color', 'black')
             });
 
             $('ul.meet>li').css('width', '100px')

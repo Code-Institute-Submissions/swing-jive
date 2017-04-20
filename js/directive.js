@@ -1,8 +1,8 @@
 angular.module('SwingJiveDirectives', [])
-    .directive('itunes-search', function () {
+    .directive('itunes', function () {
         return {
             restrict: 'E',
-            templateUrl: "../templates/directives/itunes-search.html"
+            templateUrl: "templates/directives/itunes-search.html"
         };
     })
     .directive('photos', function () {
@@ -10,4 +10,4 @@ angular.module('SwingJiveDirectives', [])
             restrict: 'E',
             templateUrl: "templates/directives/photos.html"
         };
-    });
+    })

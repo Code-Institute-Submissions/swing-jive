@@ -1,4 +1,4 @@
-angular.module('swing-jive', ['ngRoute', 'RouteControllers']);
+angular.module('swing-jive', ['ngRoute', 'RouteControllers','SwingJiveDirectives']);
 
 angular.module('swing-jive').config(function ($routeProvider) {
 

@@ -359,7 +359,7 @@ hr.final {
 @media (max-width: 600px) {
   .footer-details {
     font-size: 15px;
-    margin-bottom: 250px
+    margin-bottom: 150px
   }
 }
 .dj-name,.mn-name,.md-name,.pt-name {
@@ -374,6 +374,10 @@ hr.final {
     }
 }
 /*********** listen ***********/
+photos {
+    display: flex;
+    justify-content: center;
+}
 .listen-options {
     display: flex;
     justify-content: center;
@@ -466,6 +470,7 @@ img#album-main {
   .listen-album-info {
     font-size: 20px;
     padding-bottom: 10px;
+    padding-top: 20px;
   }
 }
 .listen-opt-albums>button {
@@ -489,8 +494,10 @@ em.year {
     display: none
   }
 }
-.ng-dirty{
-   padding-right: 20px;
+itunes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .ng-scope>td{
     padding: 5px;
@@ -501,7 +508,7 @@ ul.listen-meet {
 }
 @media (max-width: 600px) {
   ul.listen-meet {
-    margin-bottom: 180px
+    margin-bottom: 90px
   }
 }
 .listen-title{
@@ -785,6 +792,6 @@ iframe {
 }
 @media (max-width: 600px) {
   .contact-box2{
-    margin-bottom: 200px
+    margin-bottom: 150px
     }
 }

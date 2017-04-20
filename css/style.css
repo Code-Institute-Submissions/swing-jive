@@ -167,7 +167,8 @@ ul.meet {
     width: 100%
 }
 ul.meet>li{
-    border: 1px solid black;
+    border: 1px solid rgba(78,24,65,0.7);
+    background-color: white;
     padding: 10px 0.7%;
     border-radius: 10px;
     margin: 0 0.5% 0 0.5%;
@@ -185,7 +186,7 @@ ul.meet>li{
   }
 }
 ul.meet>li>a{
-    color: black;
+    color: rgb(78,24,65);
     text-decoration: none;
 }
 @media (max-width: 600px) {
@@ -221,7 +222,7 @@ img.meet {
 }
 @media (max-width: 600px) {
   .member>div {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 .member>div#one,.member>div#two {
@@ -258,7 +259,7 @@ img.meet {
 }
 @media (max-width: 600px) {
     .meet-member-images {
-        margin-top: 150px
+        margin-top: 60px
     }
 }
 .meet-member {

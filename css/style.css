@@ -27,7 +27,7 @@ ul.footer>li>a {
 @media (max-width: 600px) {
   ul.footer>li>a {
     font-size: 28px;
-      margin-right: 10px;
+    margin-right: 10px;
   }
 }
 .footer {
@@ -35,7 +35,7 @@ ul.footer>li>a {
     font-family: Roboto;
     padding: 0.7% 10% 0% 10%;
 }
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   .footer {
       padding: 0.7% 0 0.7% 0;
    }
@@ -89,12 +89,12 @@ ul.footer>li>a {
     height:100vh;
     position: relative
 }
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   #home-body {
     height: 450px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   .carousel-control{
      height: 100%
     }
@@ -111,7 +111,7 @@ ul.footer>li>a {
     z-index: 10000;
     text-align: center
 }
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   .home-title {
     font-size: 70px;
     bottom: 30%;
@@ -338,6 +338,11 @@ hr {
     right: 1%;
     top: 76%
 }
+@media (max-width: 680px) {
+  .top {
+    top: 66%;
+  }
+}
 @media (max-width: 600px) {
   .top {
     top: 4px;
@@ -459,6 +464,7 @@ img#album-main {
 @media (max-width: 600px) {
   .listen-album-info {
     font-size: 20px;
+    padding-bottom: 10px;
   }
 }
 .listen-opt-albums>button {
@@ -587,7 +593,7 @@ hr.hr-booking {
 }
 @media (max-width: 600px) {
   .book-info {
-    font-size: 18px;
+    font-size: 15px;
       width: 80%
   }
 }

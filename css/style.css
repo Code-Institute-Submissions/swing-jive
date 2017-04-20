@@ -121,6 +121,11 @@ ul.footer>li>a {
     background-color: rgb(74, 28, 65)
   }
 }
+@media (max-width: 400px) {
+  .home-title {
+    font-size: 55px;
+  }
+}
 .icons {
     width: 100%;
     padding-left: 0.5%;

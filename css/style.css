@@ -381,6 +381,7 @@ hr.final {
 @media (max-width: 600px) {
     .dj-name,.mn-name,.md-name,.pt-name {
         font-size: 60px;
+        text-align: center
     }
 }
 /*********** listen ***********/
@@ -434,8 +435,8 @@ button {
     padding:0;
 }
 img#album-main {
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
     margin: 1%;
     border-radius: 5px;
     border: solid white 1px;
@@ -447,7 +448,10 @@ img#album-main {
 }
 .listen-opt-body {
     height: 270px;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
 }
 @media (max-width: 600px) {
   .listen-opt-body {
@@ -458,7 +462,8 @@ img#album-main {
 }
 .listen-opt-info>audio {
     width: 95.5%;
-    margin-left: 1.5%
+    margin-left: 1.5%;
+    margin-top: 10px;
 
 }
 .listen-opt-albums>a>img {
@@ -467,14 +472,9 @@ img#album-main {
 .listen-album-info{
     color: rgba(255,255,255,0.8);
     font-size: 19px;
-    text-align: left;
+    text-align: center;
     font-family: Raleway;
     margin-left: 1.5%
-}
-@media (max-width: 600px) {
-  .listen-album-info {
-    text-align: center;
-  }
 }
 @media (max-width: 600px) {
   .listen-album-info {
@@ -491,9 +491,12 @@ img#album-main {
 }
 .listen-opt-albums{
     display: flex;
-    justify-content: space-around
+    justify-content: center;
+    width: 100%
 }
-
+.listen-opt-body>.content {
+    width: 100%
+}
 
 em.year {
     font-size: 16px;
@@ -532,7 +535,7 @@ ul.listen-meet {
 
 
 .gallery-main{
-    width:90%;
+    width: 100%;
     max-width:400px;
 }
 .gallery0{
@@ -561,7 +564,33 @@ video{
 .hidden-tab{
     display: none
 }
+input[type=search] {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+input[type=submit] {
+    color: #333;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.7);
+    margin: 5px;
+}
+input[type=submit]:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+.ng-scope>td>a {
+    color: #333;
+    background-color: rgba(255,255,255,0.7);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
 
+.ng-scope>td>a:hover {
+    background-color: rgba(255,255,255,0.4);
+    text-decoration: none
+}
 /************ bookings ************/
 .booking-title{
     margin-top: 50px;
@@ -625,7 +654,8 @@ hr.hr-booking {
     width: 60%;
     height: auto;
     text-align: center;
-    color: rgba(255,255,255,0.6)
+    color: rgba(255,255,255,0.6);
+    align-items: baseline;
 }
 .book-concert>img {
     height: 140px;
@@ -668,6 +698,13 @@ h2.concerts{
     background-color: white;
   }
 }
+.purchase-ticket {
+    border: solid 1px gainsboro;
+}
+.paypal {
+    background-color: rgba(74,28,65,0.3) !important;
+    color: #333 !important;
+}
 
 .popup .popuptext {
     visibility: hidden;
@@ -686,7 +723,7 @@ h2.concerts{
 .modal-content{
     color: rgb(74,28,65);
     font-family: Raleway;
-    width: 40%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto
 }
@@ -715,6 +752,20 @@ h2.concerts{
     display: flex;
     flex-wrap: wrap
 }
+.contact-link, .contact-link:hover {
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    color: rgb(78,24,65);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+}
+.contact-link:hover {
+    background-color: rgba(255,255,255,0.4)
+}
 /************* contact ***************/
 h1.contact-title {
     margin-top: 40px;
@@ -738,7 +789,9 @@ h1.contact-title {
   }
 }
 .contact-map{
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px
 }
 
@@ -751,6 +804,7 @@ form {
     padding-top: 2%;
     color: rgba(255,255,255,0.7);
     font-family: Raleway;
+    text-align: center
 }
 @media (max-width: 600px) {
   form {
@@ -798,10 +852,16 @@ iframe {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 80px
+    margin-bottom: 120px
 }
 @media (max-width: 600px) {
   .contact-box2{
     margin-bottom: 150px
     }
+}
+
+input,textarea {
+    border: none;
+    padding: 2px 5px;
+    border-radius: 2px;
 }

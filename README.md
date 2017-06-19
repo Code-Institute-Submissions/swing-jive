@@ -37,9 +37,9 @@ I created a website for a Swing/Jive band located in Dublin that mainly focus on
 ----------------
 ### CREDIT
 
-* Itunes API
-* Carousel
-* Textillate 
+* Itunes API 
+* Bootstrap Carousel code
+* [Textillate](http://textillate.js.org/)
 * Some of my Code I got from Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs.
 * Images were sourced from Pixabay (a free royalty-free images site) or created myself.
 

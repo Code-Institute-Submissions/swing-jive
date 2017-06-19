@@ -108,6 +108,21 @@ angular.module('RouteControllers', [])
 
     })
     .controller('BookingsController', function ($scope) {
+            
+            $(document).ready(function () {
+
+                $('#myform1').on('submit', function(ev) {
+                    $('.footer1').removeClass('hide'); 
+                });
+                $('#myform2').on('submit', function(ev) {
+                    $('.footer2').removeClass('hide'); 
+                });
+                $('#myform3').on('submit', function(ev) {
+                    $('.footer3').removeClass('hide'); 
+                });
+                $('.modal-footer').css("text-align", "center");
+
+            });
     
     })
     .controller('ItunesController', function ($scope, $http) {

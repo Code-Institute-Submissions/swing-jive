@@ -702,8 +702,11 @@ h2.concerts{
     border: solid 1px gainsboro;
 }
 .paypal {
-    background-color: rgba(74,28,65,0.3) !important;
+    background-color: rgba(74,28,65,0.1) !important;
     color: #333 !important;
+}
+.paypal:hover {
+    background-color: rgba(74,28,65,0.3) !important;
 }
 
 .popup .popuptext {

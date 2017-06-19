@@ -37,6 +37,7 @@ $(document).ready(function () {
     $('.icons>a>img').mouseleave(function () {
         $(this).removeClass('social-med1')
     });
-
+    
+    
 
 });

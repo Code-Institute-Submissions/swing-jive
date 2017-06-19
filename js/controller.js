@@ -143,6 +143,24 @@ angular.module('RouteControllers', [])
     })
     .controller('ContactController', function ($scope) {
         
+        $(document).ready(function () {
+
+            $('.close').click(function() {
+                location.reload();
+            });
+            
+            $('#myform1').on('submit', function(ev) {
+                $('#myModal1').modal('show'); 
+                
+            });
+            
+            $('#myform2').on('submit', function(ev) {
+                $('#myModal2').modal('show'); 
+                
+            });
+
+        });
+        
     })
     .controller('HomeController', function ($scope) {
 

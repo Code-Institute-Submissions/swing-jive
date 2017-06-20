@@ -9,7 +9,11 @@ Starting my first project having begun the course with no computer science backg
 ### SWING/JIVE
 #### What the project does, needs it fulfills & functionality
 
-I created a website for a Swing/Jive band located in Dublin that mainly focus on playing at Wedding or Corporate events but also play various concerts. 
+I created a website for a Swing/Jive band located in Dublin that mainly focus on playing at Wedding or Corporate events but also play at various concerts. This meant the design for the website had to be for various different clients. There is a page to display information about the band members in a sophisticated manner to suit the corporate and weddings feel. 
+
+I made sure that the Listen page was interactive which allowed the User to really enjoy their time on the site and experience the music and feel of the band. With the click of an album button you can play whatever music you feel like. You can even head over the the Itunes search to search and play previous band's music! There are options for the latest video to watch and latest gallery pictures with a slick and easy to use design.
+
+The Booking page allows the user to purchase tickets or find out details about booking events. As we weren't allowed to use any backend work and there is no database, I chose to tell the user the tickets are sold out (with jQuery) when the form is submitted. I also used a similar approach with the contact page forms. The contact page allows users to subscribe to a mailing list or send in a query.
 
 ----------------
 ### TECHNOLOGIES
@@ -37,7 +41,7 @@ I created a website for a Swing/Jive band located in Dublin that mainly focus on
 ----------------
 ### CREDIT
 
-* Itunes API 
+* Itunes API search code
 * Bootstrap Carousel code
 * [Textillate](http://textillate.js.org/)
 * Some of my Code I got from Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs.
@@ -47,12 +51,11 @@ I created a website for a Swing/Jive band located in Dublin that mainly focus on
 ### CHALLENGES
 #### What was kept/changed to fit my need
 
-Home page grabbing attention
-landscape design - struggled with the mobile portrait conversion
-as first project struggled getting the hang of lots of parts so extra revision was needed! Probably made it more complicated than needed
-Interactive: breathing buttons and the listen page. fun to explore for the user.
-Home page struggle with the animation
-mixing the corporate with weddings theme and fun swing jive
+* My main aim for this project was interactivity and animation to allow the user to have an interesting and fun experience. I used breathing buttons on the listen and meet pages as well as adding a slick design to the listen tab on the listen page. 
+* A struggle I came across was making the text on the home page animated. It was a great deal of trouble trying to get the footer to slide up to the right amount and back down when certain buttons are clicked. It was also hard to get the title to animate correctly. Although it is not as smooth as I had hoped for, I managed to get it to work! One trouble I am still faced with is that the title dissapears on mobile display when you turn the phone (if I had more time I would have looked into this). 
+* I aimed for a landscape design to the site as I felt it suited the up-market design I needed. This proved a struggle with the change to portrait focussed mobile or ipad design. One of the ways I tackeled this was to use icons instead of the navigation options to save room when displaying on a mobile.
+* As my first project and also my first attempt at coding, I found it hard getting the hang of parts so extra revision was needed. I now look back and can see how I made parts more complicated than it needed to be!
+* Although it was a mission mixing the Corporate designs, Wedding themes and a fun Swing Jive band, I loved it! I went with a deep colour purple theme to represent a mixture between the weddings and corporate seriousness as well as brightening it for the fun Swing Jive band. I kept a slick feel for the upmarket events and then things like the animation and breathing buttons show the fun, entertaining side of the band.
 
 ----------------
 ### PROJECT BRIEF

@@ -41,7 +41,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 ----------------
 ### CREDIT
 
-* Itunes API search code
+* Itunes API search code: In the Itunes controller and the Itunes directive.
 * Bootstrap Carousel code
 * [Textillate](http://textillate.js.org/)
 * Some of my Code I got from Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs.
@@ -56,6 +56,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 * I aimed for a landscape design to the site as I felt it suited the up-market design I needed. This proved a struggle with the change to portrait focussed mobile or ipad design. One of the ways I tackeled this was to use icons instead of the navigation options to save room when displaying on a mobile.
 * As my first project and also my first attempt at coding, I found it hard getting the hang of parts so extra revision was needed. I now look back and can see how I made parts more complicated than it needed to be!
 * Although it was a mission mixing the Corporate designs, Wedding themes and a fun Swing Jive band, I loved it! I went with a deep colour purple theme to represent a mixture between the weddings and corporate seriousness as well as brightening it for the fun Swing Jive band. I kept a slick feel for the upmarket events and then things like the animation and breathing buttons show the fun, entertaining side of the band.
+* Working with Angular Directives was of great use to me in this project. On the Listen page I required a lot of code for each different panel. So being able to create a directive for the Itunes Search and the Photo Gallery proved extremely useful to save space.
 
 ----------------
 ### PROJECT BRIEF
@@ -99,8 +100,6 @@ The Booking page allows the user to purchase tickets or find out details about b
 * Make sure your site is as responsive as possible. You can test this by checking the site on different screen sizes and browsers.
 
 * The site should contain your own custom JavaScript logic – include at least one interactive component on your site that is based on non-trivial javascript logic. You can write this logic either inside an Angular controller/service, or in a separate js file.
-
-* You should conduct and document tests to ensure that all of you websites functionality works well. Automated testing using frameworks such as Jasmine are preferable, but properly documented manual tests are also acceptable.
 
 * Write a README.md file for your project that explains what the project does and the need that it fulfills. It should also describe the functionality of the project, as well as the technologies used. Detail how the project was deployed and tested and if some of the work was based off other code, explain what was kept and/or how it was changed to fit your need. A project submitted without a README.md file will FAIL.
 

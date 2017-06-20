@@ -37,6 +37,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 * https://validator.w3.org/
 * I frequenty asked friends, family and peers to have a look trhough my website and give feedback on code, functionality or aesthetics that could be improved. My mum is very much into Swing and Jive dancing so she was a great help and even appears in one of the pictures on the home page!
 * I constantly tested the website on different browsers as well as different size screens.
+* Manual testing
 
 ----------------
 ### CREDIT

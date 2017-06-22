@@ -34,10 +34,20 @@ The Booking page allows the user to purchase tickets or find out details about b
 ----------------
 ### TESTING
 
-* https://validator.w3.org/
+* https://validator.w3.org/ - checked any errors and sorted them if needed.
 * I frequenty asked friends, family and peers to have a look trhough my website and give feedback on code, functionality or aesthetics that could be improved. My mum is very much into Swing and Jive dancing so she was a great help and even appears in one of the pictures on the home page!
-* I constantly tested the website on different browsers as well as different size screens.
+* I constantly tested the website on different browsers as well as different size screens (Explained more below).
 * Manual testing
+    * I used the Google Chrome developer tools to test my website on various different screen sizes. I then confirmed this by testing it on my Iphone6, friends' Iphone5, Ipads and Laptops. I made sure the everything would fit properly on mobile display like creating icons for the options footer to save room. I used a lot of flex design to wrap div boxes on smaller screens. I also hid certain elements to save room, for example I hid the large album on the listen page for mobile display.
+    * I downloaded different browsers; Firefox, Chrome and Internet Explorer to test my site on. I also viewed the site from a macbook to test safari.
+    * The links were tested to see that they guide the user to the right area.
+    * The social media icons at the top of the page were clicked to see that they don't take the user anywhere (as no account), but do not produce errors.
+    * I tested the animation of the home title on various screens and made sure it all worked. The only problem I couldn't fix was the title disappearing on mobile display when you turn the phone. If I had more time I would look into this properly.
+    * I tested the buttons on the meet page to check that they all do what they're supposed to. I realised that at one point you couldn't click a name, scroll back up and click it again. I managed to fix this as it was to do with something being caught on an 'a' tag. 
+    * I checked that all the jQuery worked by checking those particular areas. For example I checked that the music would stop when you click a different album. I also checked if you watch the video and the other music playing would stop. 
+    * Both bootstrap carousels proved to work perfectly, I tested them using all the buttons. I previously found that a button on one wasn't working as it was getting caught on a tag, but have since fixed this.
+    * I tested the ITunes API by searching various artists and playing the music and seeing if the right artist and song appeared. I also tried search for nothing and made sure it tells the user to enter something.
+    * I tested the forms on the contact page and booking page by clicking submit without filling it and getting told to fill it in. I also tested that when they were filled in correctly, they would tell the user that either the tickets are sold out or the form was successfull.  
 
 ----------------
 ### CREDIT

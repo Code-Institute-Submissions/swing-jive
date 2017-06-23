@@ -1,3 +1,4 @@
+/* General JS code: Not specific to pages */
 $(document).ready(function () {
 
     //******* footer *******//

@@ -55,7 +55,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 * Itunes API search code: In the Itunes controller and the Itunes directive.
 * Bootstrap Carousel code
 * [Textillate](http://textillate.js.org/)
-* Some of my Code I got from Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs.
+* Credit to Code Institute as it is the course I am taking - I have showed in my annotation that I understand it all and also personalised it a lot to my needs. I used it to follow methods on how to build up a site using Angular JS.
 * Images were sourced from Pixabay (a free royalty-free images site) or created myself.
 
 ----------------
@@ -68,6 +68,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 * As my first project and also my first attempt at coding, I found it hard getting the hang of parts so extra revision was needed. I now look back and can see how I made parts more complicated than it needed to be!
 * Although it was a mission mixing the Corporate designs, Wedding themes and a fun Swing Jive band, I loved it! I went with a deep colour purple theme to represent a mixture between the weddings and corporate seriousness as well as brightening it for the fun Swing Jive band. I kept a slick feel for the upmarket events and then things like the animation and breathing buttons show the fun, entertaining side of the band.
 * Working with Angular Directives was of great use to me in this project. On the Listen page I required a lot of code for each different panel. So being able to create a directive for the Itunes Search and the Photo Gallery proved extremely useful to save space.
+* One of my worst areas on this project was my uploads to git. I should have named them to explain more about what each upload was for. I realise the importance of this looking back, however as my first project I did not think about it.
 
 ----------------
 ### PROJECT BRIEF

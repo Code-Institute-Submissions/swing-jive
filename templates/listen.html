@@ -1,20 +1,29 @@
 <div class="listen-body">
     <div class="listen-body2">
-        <h1 class="listen-title">Listen & Look</h1>
-        <div id="listen-options">
 
+        <!-- Listen Title -->
+        <h1 class="listen-title">Listen &amp; Look</h1>
+
+        <!-- Listen Content -->
+        <div id="listen-options">
             <div class="tab-content">
+
+                <!-- Listen Tab -->
                 <div id="pill1" class="tab-pane fade in active">
+
                     <div class="listen-options" id="listen">
 
-                        <img class="tab1" id="album-main" src="images/album.jpg">
-                        <img class="hidden-tab tab2" id="album-main" src="images/album2.jpg">
-                        <img class="hidden-tab tab3" id="album-main" src="images/cover3.jpg">
-                        <img class="hidden-tab tab4" id="album-main" src="images/cover.jpg">
+                        <!-- Album covers that appear with each tab below -->
+                        <img class="tab1 tab-all" id="album-main" src="images/album.jpg">
+                        <img class="hidden-tab tab2 tab-all" id="album-main" src="images/album2.jpg">
+                        <img class="hidden-tab tab3 tab-all" id="album-main" src="images/cover3.jpg">
+                        <img class="hidden-tab tab4 tab-all" id="album-main" src="images/cover.jpg">
 
                         <div class="listen-opt-body">
                             <div class="tab content">
-                                <div class="listen-opt-info tab1">
+
+                                <!-- Song tab 1 -->
+                                <div class="listen-opt-info tab1 tab-all">
                                     <div class="listen-album-info"><strong>Daydream Believer</strong>
                                         <br> The Birds, The Bees
                                         <br>Swing/Jive
@@ -22,7 +31,8 @@
                                     <audio id="player" src="media/DaydreamBeliever.mp3" controls></audio>
                                 </div>
 
-                                <div class="listen-opt-info tab2 hidden-tab">
+                                <!-- Song tab 2 -->
+                                <div class="listen-opt-info tab2 tab-all hidden-tab">
                                     <div class="listen-album-info"><strong>Clarksville</strong>
                                         <br>Concert Recordings
                                         <br>Swing/Jive
@@ -30,7 +40,8 @@
                                     <audio id="player" src="media/Clarksville.mp3" controls></audio>
                                 </div>
 
-                                <div class="listen-opt-info tab3 hidden-tab">
+                                <!-- Song tab 3 -->
+                                <div class="listen-opt-info tab3 tab-all hidden-tab">
                                     <div class="listen-album-info"><strong>I'm A Believer</strong>
                                         <br>More of the Monkees
                                         <br>Swing/Jive
@@ -38,7 +49,8 @@
                                     <audio id="player" src="media/ImABeliever.mp3" controls></audio>
                                 </div>
 
-                                <div class="listen-opt-info tab4 hidden-tab">
+                                <!-- Song tab 4 -->
+                                <div class="listen-opt-info tab4 tab-all hidden-tab">
                                     <div class="listen-album-info"><strong>Stepping Stone</strong>
                                         <br>More of the Monkees
                                         <br>Swing/Jive
@@ -48,38 +60,46 @@
 
                             </div>
 
+                            <!-- Albums that when clicked open up the different song tabs above -->
                             <div class="listen-opt-albums">
-                                <button class="button-tab1"><img id="album1" src="images/album.jpg"></button>
-                                <button class="button-tab2"><img id="album2" src="images/album2.jpg"></button>
-                                <button class="button-tab3"><img id="album3" src="images/cover3.jpg"></button>
-                                <button class="button-tab4"><img id="album4" src="images/cover.jpg"></button>
+                                <button class="button-tab1" onclick="playtab('.tab1')"><img id="album1" src="images/album.jpg"></button>
+                                <button class="button-tab2" onclick="playtab('.tab2')"><img id="album2" src="images/album2.jpg"></button>
+                                <button class="button-tab3" onclick="playtab('.tab3')"><img id="album3" src="images/cover3.jpg"></button>
+                                <button class="button-tab4" onclick="playtab('.tab4')"><img id="album4" src="images/cover.jpg"></button>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
 
+
+                <!-- Gallery tab -->
                 <div id="pill2" class="tab-pane fade">
                     <div class="listen-options" id="gallery">
 
-                        
+                        <!-- Photo Gallery Directive -->
                         <photos></photos>
-
 
                     </div>
                 </div>
 
+
+                <!-- Watch tab -->
                 <div id="pill3" class="tab-pane fade">
                     <div class="listen-options" id="watch">
 
+                        <!-- Video of the band -->
                         <video src="media/TheMonkees.mp4" type="video/mp4" controls></video>
 
                     </div>
                 </div>
 
+
+                <!-- Itunes Search API -->
                 <div id="pill4" class="tab-pane fade">
                     <div class="listen-options" id="search" ng-controller="ItunesController">
-                        
+
+                        <!-- Itunes Search API Directive -->
                         <itunes></itunes>
 
                     </div>
@@ -88,6 +108,7 @@
             </div>
 
 
+            <!-- Pill Nagivation: Listen, Gallery, Watch and Search -->
             <ul class="meet listen-meet">
                 <li class="active"><a data-toggle="pill" href="/#pill1">Listen</a></li>
                 <li><a data-toggle="pill" data-target="#pill2">Gallery</a></li>

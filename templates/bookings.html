@@ -1,147 +1,188 @@
+<!-- Bookings Title -->
 <h1 class="booking-title">Bookings</h1>
 
-
+<!-- Booking Concerts -->
 <h2 class="concerts">Concerts</h2>
+
 <div class="book-panel first">
 
+    <!-- Nottingham -->
     <div class="book-concert col-sm-4"><img src="images/bookings/place1.jpg"><span>Nottingham</span>
-        <div class="book-concert-info">Head down to Rock City for a spectacular concert. With many big artists putting on incredible shows here, it is guaranteed to win you over. 
+        <div class="book-concert-info">Head down to Rock City for a spectacular concert. With many big artists putting
+            on incredible shows here, it is guaranteed to win you over.
         </div>
+        <!-- Buy Tickets button opens Modal 1 -->
         <button class="buy-tickets Nottingham" data-toggle="modal" data-target="#myModal1">Tickets</button>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal 1 -->
     <div id="myModal1" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-
             <!-- Modal content-->
             <div class="modal-content">
+
                 <div class="modal-header">
+                    <!-- Close Modal button -->
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Buy Tickets</h4>
                 </div>
-                <div class="modal-body">
 
+                <div class="modal-body">
+                    <!-- Form for tickets -->
                     <form id="myform1">
                         <p>Number of tickets<br>
-                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1" max="5"></p>
+                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1"
+                                   max="5"></p>
                         <p>Email<br>
-                            <input class="purchase-ticket" name="email" type="email" size="30" placeholder=" e.g. johnsmith@hotmail.co.uk"
+                            <input class="purchase-ticket" name="email" type="email" size="30"
+                                   placeholder=" e.g. johnsmith@hotmail.co.uk"
                                    required="required"/>
                         </p>
+                        <!-- Submit button opens footer -->
                         <button class="buy-tickets paypal" type="submit" value="Submit">Paypal</button>
                     </form>
-
                 </div>
+
+                <!-- Pops up to show tickets sold out when submit button clicked -->
                 <div class="modal-footer footer1 text-center hide">
                     ******* ALL SOLD OUT *******<br>
                     Many appologies! Please keep checking the site for new events.
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
-
+    <!-- Manchester -->
     <div class="book-concert col-sm-4"><img src="images/bookings/place2.jpg"><span>Manchester</span>
-        <div class="book-concert-info">Heading up North to put on a night that you just can't miss out on! A breath-taking city that is full of musical wonders.
+        <div class="book-concert-info">Heading up North to put on a night that you just can't miss out on! A
+            breath-taking city that is full of musical wonders.
         </div>
+        <!-- Buy Tickets button opens Modal 2 -->
         <button class="buy-tickets Manchester" data-toggle="modal" data-target="#myModal2">Tickets</button>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal 2 -->
     <div id="myModal2" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-
             <!-- Modal content-->
             <div class="modal-content">
+
                 <div class="modal-header">
+                    <!-- Close Modal button -->
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Buy Tickets</h4>
                 </div>
-                <div class="modal-body">
 
+                <div class="modal-body">
+                    <!-- Form to buy tickets -->
                     <form id="myform2">
                         <p>Number of tickets<br>
-                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1" max="5"></p>
+                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1"
+                                   max="5"></p>
                         <p>Email<br>
-                            <input class="purchase-ticket" name="email" type="email" size="30" placeholder=" e.g. johnsmith@hotmail.co.uk"
+                            <input class="purchase-ticket" name="email" type="email" size="30"
+                                   placeholder=" e.g. johnsmith@hotmail.co.uk"
                                    required="required"/>
                         </p>
+                        <!-- Submit button opens footer -->
                         <button class="buy-tickets paypal" type="submit" value="Submit">Paypal</button>
                     </form>
-
                 </div>
+
+                <!-- Pops up to show tickets sold out when submit button clicked -->
                 <div class="modal-footer footer2 text-center hide">
-                    <i class="glyphicon glyphicon-remove-sign"></i> ALL SOLD OUT <i class="glyphicon glyphicon-remove-sign"></i><br><br>
+                    <i class="glyphicon glyphicon-remove-sign"></i> ALL SOLD OUT <i
+                        class="glyphicon glyphicon-remove-sign"></i><br><br>
                     Many appologies! Please keep checking the site for new events.
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-    
-    
+
+    <!-- London -->
     <div class="book-concert col-sm-4"><img src="images/bookings/place3.jpg"><span>London</span>
-        <div class="book-concert-info">As all you music lovers should know, this is the home of many amazing shows and artists. Prepare yourself for a night to remember.
+        <div class="book-concert-info">As all you music lovers should know, this is the home of many amazing shows and
+            artists. Prepare yourself for a night to remember.
         </div>
+        <!-- Buy Tickets button opens Modal 3 -->
         <button class="buy-tickets London" data-toggle="modal" data-target="#myModal3">Tickets</button>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal 3 -->
     <div id="myModal3" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-
             <!-- Modal content-->
             <div class="modal-content">
+
                 <div class="modal-header">
+                    <!-- Close Modal button -->
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Buy Tickets</h4>
                 </div>
-                <div class="modal-body">
 
+                <div class="modal-body">
+                    <!-- Form to buy tickets -->
                     <form id="myform3">
                         <p>Number of tickets<br>
-                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1" max="5"></p>
+                            <input class="purchase-ticket" type="number" name="quantity" required="required" min="1"
+                                   max="5"></p>
                         <p>Email<br>
-                            <input class="purchase-ticket" name="email" type="email" size="30" placeholder=" e.g. johnsmith@hotmail.co.uk"
+                            <input class="purchase-ticket" name="email" type="email" size="30"
+                                   placeholder=" e.g. johnsmith@hotmail.co.uk"
                                    required="required"/>
                         </p>
+                        <!-- Submit button opens footer -->
                         <button class="buy-tickets paypal" type="submit" value="Submit">Paypal</button>
                     </form>
-
                 </div>
+
+                <!-- Pops up to show tickets sold out when submit button clicked -->
                 <div class="modal-footer footer3 text-center hide">
                     ******* ALL SOLD OUT *******<br>
                     Many appologies! Please keep checking the site for new events.
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-    
-    
-    
+
 </div>
+
+<!-- Need help buying tickets link to contact page -->
 <a class="contact-link" href="#/contact">Need Help? Email in your query</a>
+
+<!-- Booking Weddings Information -->
 <h2>Weddings</h2>
 <div class="book-panel"><img src="images/bookings/wedding.jpg"></div>
-<div class="book-info">One of our favourite events to play at is weddings. We thrive of the positive energy and love. Please do not hesitate to contact us about previous wedding events we've played at so we can show you our work.
+
+<div class="book-info">One of our favourite events to play at is weddings. We thrive of the positive energy and love.
+    Please do not hesitate to contact us about previous wedding events we've played at so we can show you our work.
     <br><br>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione
     temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus
 </div>
+
+<!-- Contact about Weddings link to contact page -->
 <a class="contact-link" href="#/contact">Email us about Weddings</a>
 <hr class="hr-booking">
+
+
+<!-- Booking Corporate Events Information -->
 <h2>Corporate Events</h2>
 <div class="book-panel"><img src="images/bookings/corporate.jpg"></div>
-<div class="book-info">Corporate Events allow us to play music with a twist and uplift your work filled moods. We've performed at various large company events and cannot wait to play more!
+
+<div class="book-info">Corporate Events allow us to play music with a twist and uplift your work filled moods. We've
+    performed at various large company events and cannot wait to play more!
     <br><br>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione
     temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
 </div>
+
+<!-- Contact about Corporate Events link to contact page -->
 <a class="contact-link" href="#/contact">Email us about Corporate Events</a>
 <hr class="hr-booking final-hr">
 
-
+<!-- Copyrighted Information footer -->
 <div class="footer-details">&copy Copyrighted<br>2016 Rebecca Manning</div>

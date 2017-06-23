@@ -1,130 +1,97 @@
 angular.module('RouteControllers', [])
+
     .controller('MeetTheBandController', function ($scope) {
-        $(document).ready(function () {
-            $('ul.meet>li').mouseenter(function () {
-                $(this).animate({fontSize: '18px'}, 'slow');
-                $(this).addClass('meet-hover');
-                $('ul.meet>li').css('border-width', '0');
-            });
-            $('ul.meet>li').mouseleave(function () {
-                $(this).animate({fontSize: '14px'}, 'slow');
-                $(this).removeClass('meet-hover');
-                $('ul.meet>li').css('border-width', '1px');
-            });
-
+        /* Make the buttons breath when hovered over */
+        $('ul.meet>li').mouseenter(function () {
+            $(this).animate({fontSize: '18px'}, 'slow');
+            $(this).addClass('meet-hover');
+            $('ul.meet>li').css('border-width', '0');
         });
+        $('ul.meet>li').mouseleave(function () {
+            $(this).animate({fontSize: '14px'}, 'slow');
+            $(this).removeClass('meet-hover');
+            $('ul.meet>li').css('border-width', '1px');
+        });
+    
+        /* Removing styling needed just for home page */
+        $('body').removeClass('homebody');
+        $('.laptop-title').removeClass('homelaptop-title'); 
+        $('.mobile-title').removeClass('homemobile-title');
     })
-
 
     .controller('ListenController', function ($scope, $http) {
-        $(document).ready(function () {
-            $('ul.meet>li').mouseenter(function () {
-                $(this).animate({fontSize: '18px'}, 'slow');
-                $(this).addClass('meet-hover');
-                $('ul.meet>li').css('border-width', '0');
-            });
-            $('ul.meet>li').mouseleave(function () {
-                $(this).animate({fontSize: '14px'}, 'slow');
-                $(this).removeClass('meet-hover');
-                $('ul.meet>li').css('border-width', '1px');
-            });
-
-            $('ul.meet>li').css('width', '100px')
-
-            $('.listen-opt-albums>button').mouseenter(function () {
-                $(this).siblings().css('opacity', '0.5')
-            });
-            $('.listen-opt-albums>button').mouseleave(function () {
-                $(this).siblings().css('opacity', '1');
-            });
-            $('.listen-opt-albums>button>img').mouseenter(function () {
-                $(this).css('border', '5px solid white');
-                $(this).css('opacity', '1')
-            });
-            $('.listen-opt-albums>button>img').mouseleave(function () {
-                $(this).css('border', '1px solid white');
-                $(this).css('opacity', '0.5')
-            });
-            $('.listen-opt-albums>button').click(function () {
-                $(this).css('outline', 'none');
-            });
-            $('.listen-opt-albums>button.button-tab1').click(function () {
-                $('.tab1').removeClass('hidden-tab');
-                $('.tab3').addClass('hidden-tab');
-                $('.tab4').addClass('hidden-tab');
-                $('.tab2').addClass('hidden-tab');
-
-                $('.tab1>audio').trigger('play');
-                $('.tab3>audio').trigger('pause');
-                $('.tab4>audio').trigger('pause');
-                $('.tab2>audio').trigger('pause');
-                $('#watch>video').trigger('pause')
-            });
-            $('.listen-opt-albums>button.button-tab2').click(function () {
-                $('.tab2').removeClass('hidden-tab');
-                $('.tab3').addClass('hidden-tab');
-                $('.tab4').addClass('hidden-tab');
-                $('.tab1').addClass('hidden-tab');
-
-                $('.tab2>audio').trigger('play');
-                $('.tab3>audio').trigger('pause');
-                $('.tab4>audio').trigger('pause');
-                $('.tab1>audio').trigger('pause');
-                $('#watch>video').trigger('pause')
-            });
-            $('.listen-opt-albums>button.button-tab3').click(function () {
-                $('.tab3').removeClass('hidden-tab');
-                $('.tab2').addClass('hidden-tab');
-                $('.tab4').addClass('hidden-tab');
-                $('.tab1').addClass('hidden-tab');
-
-                $('.tab3>audio').trigger('play');
-                $('.tab1>audio').trigger('pause');
-                $('.tab4>audio').trigger('pause');
-                $('.tab2>audio').trigger('pause');
-                $('#watch>video').trigger('pause')
-            });
-            $('.listen-opt-albums>button.button-tab4').click(function () {
-                $('.tab4').removeClass('hidden-tab');
-                $('.tab3').addClass('hidden-tab');
-                $('.tab2').addClass('hidden-tab');
-                $('.tab1').addClass('hidden-tab');
-
-                $('.tab4>audio').trigger('play');
-                $('.tab3>audio').trigger('pause');
-                $('.tab1>audio').trigger('pause');
-                $('.tab2>audio').trigger('pause');
-                $('#watch>video').trigger('pause')
-            });
-
-            $('#watch>video').on('play', function (e) {
-                $('.tab4>audio').trigger('pause');
-                $('.tab3>audio').trigger('pause');
-                $('.tab1>audio').trigger('pause');
-                $('.tab2>audio').trigger('pause');
-            });
-
+        /* Make the buttons breath when hovered over */
+        $('ul.meet>li').mouseenter(function () {
+            $(this).animate({fontSize: '18px'}, 'slow');
+            $(this).addClass('meet-hover');
+            $('ul.meet>li').css('border-width', '0');
+        });
+        $('ul.meet>li').mouseleave(function () {
+            $(this).animate({fontSize: '14px'}, 'slow');
+            $(this).removeClass('meet-hover');
+            $('ul.meet>li').css('border-width', '1px');
         });
 
-    })
-    .controller('BookingsController', function ($scope) {
-            
-            $(document).ready(function () {
+        /* Adjust buttons just on Listen page */
+        $('ul.meet>li').css('width', '100px')
 
-                $('#myform1').on('submit', function(ev) {
-                    $('.footer1').removeClass('hide'); 
-                });
-                $('#myform2').on('submit', function(ev) {
-                    $('.footer2').removeClass('hide'); 
-                });
-                $('#myform3').on('submit', function(ev) {
-                    $('.footer3').removeClass('hide'); 
-                });
-                $('.modal-footer').css("text-align", "center");
+        /* Hover over an album and the other albums turn faded */
+        $('.listen-opt-albums>button').mouseenter(function () {
+            $(this).siblings().css('opacity', '0.5')
+        });
+        $('.listen-opt-albums>button').mouseleave(function () {
+            $(this).siblings().css('opacity', '1');
+        });
 
-            });
+        /* Hover over an album and it gains a thick white border */
+        $('.listen-opt-albums>button>img').mouseenter(function () {
+            $(this).css('border', '5px solid white');
+            $(this).css('opacity', '1')
+        });
+        $('.listen-opt-albums>button>img').mouseleave(function () {
+            $(this).css('border', '1px solid white');
+            $(this).css('opacity', '0.5')
+        });
+        $('.listen-opt-albums>button').click(function () {
+            $(this).css('outline', 'none');
+        });
+
+
+        /* Watch the video on the 'watch' tab and all the music stops playing */
+        $('#watch>video').on('play', function (e) {
+            $('.tab-all>audio').trigger('pause');
+        });
     
+        /* Removing styling needed just for home page */
+        $('body').removeClass('homebody');
+        $('.laptop-title').removeClass('homelaptop-title'); 
+        $('.mobile-title').removeClass('homemobile-title');
+
     })
+
+    .controller('BookingsController', function ($scope) {
+        /* When the form is submitted, the footer appears to show tickets have sold out */
+        $('#myform1').on('submit', function (ev) {
+            $('.footer1').removeClass('hide');
+        });
+        $('#myform2').on('submit', function (ev) {
+            $('.footer2').removeClass('hide');
+        });
+        $('#myform3').on('submit', function (ev) {
+            $('.footer3').removeClass('hide');
+        });
+
+        /* Center text on modal footer but only on Booking page */
+        $('.modal-footer').css("text-align", "center");
+    
+        /* Removing styling needed just for home page */
+        $('body').removeClass('homebody');
+        $('.laptop-title').removeClass('homelaptop-title'); 
+        $('.mobile-title').removeClass('homemobile-title');
+
+    })
+
+    /* Itunes API Controller on Listen page NOT MY CODE */
     .controller('ItunesController', function ($scope, $http) {
         $scope.searchiTunes = function (keyword) {
             // use the jsonp callback function from the $http service this
@@ -156,47 +123,53 @@ angular.module('RouteControllers', [])
         }
 
     })
+
     .controller('ContactController', function ($scope) {
-        
-        $(document).ready(function () {
-
-            $('.close').click(function() {
-                location.reload();
-            });
-            
-            $('#myform1').on('submit', function(ev) {
-                $('#myModal1').modal('show'); 
-                
-            });
-            
-            $('#myform2').on('submit', function(ev) {
-                $('#myModal2').modal('show'); 
-                
-            });
-
+        /* Exiting the Modal (produced after the form) reloads the page */
+        $('.close').click(function () {
+            location.reload();
         });
-        
+        $('.modal').on('hidden.bs.modal', function () {
+            location.reload();
+        });
+
+        /* On submit form, show a modal to tell User their form has been a success */
+        $('#myform1').on('submit', function (ev) {
+            $('#myModal1').modal('show');
+        });
+        $('#myform2').on('submit', function (ev) {
+            $('#myModal2').modal('show');
+        });
+    
+        /* Removing styling needed just for home page */
+        $('body').removeClass('homebody');
+        $('.laptop-title').removeClass('homelaptop-title'); 
+        $('.mobile-title').removeClass('homemobile-title');
+
     })
+
     .controller('HomeController', function ($scope) {
 
+        /* Styling needed just for home page */
+        $('body').addClass('homebody');
+        $('.laptop-title').addClass('homelaptop-title'); 
+        $('.mobile-title').addClass('homemobile-title');
+    
+        /* Animate the footer growing upwards and hide the footer title */
+        $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
+        $('.footer-title').hide();
+        
+        /* 'textillate' jQuery for animated font effect */
+        $(function () {
+            $('.demo').textillate({
 
-        $(document).ready(function () {
-
-            $('.footer>li>a').animate({"padding-bottom": "100%"}, 'slow');
-            $('.footer-title').hide();
-
-            $(function () {
-                $('.demo').textillate({
-
-                    initialDelay: 300,
-                    in: {
-                        effect: 'fadeIn',
-                        shuffle: false,
-                        delay: 60,
-                    },
-                });
+                initialDelay: 300,
+                in: {
+                    effect: 'fadeIn',
+                    shuffle: false,
+                    delay: 60,
+                },
             });
-
         });
 
 

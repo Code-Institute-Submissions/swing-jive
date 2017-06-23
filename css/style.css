@@ -189,11 +189,13 @@ ul.footer > li > a {
     overflow: hidden;
     position: fixed;
 }
+
 @media (min-width: 560px) {
     .homelaptop-title {
         display: unset;
     }
 }
+
 @media (max-width: 560px) {
     .homemobile-title {
         display: unset;

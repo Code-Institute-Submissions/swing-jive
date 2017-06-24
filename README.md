@@ -27,7 +27,7 @@ The Booking page allows the user to purchase tickets or find out details about b
 * Angular JS
 
 ----------------
-### DEPLOYMENT
+### DEMO
 
 **Github** - https://bmanning1.github.io/swing-jive
 
